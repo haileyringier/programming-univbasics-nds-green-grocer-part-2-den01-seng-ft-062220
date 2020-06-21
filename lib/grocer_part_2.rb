@@ -9,25 +9,16 @@ def apply_coupons(cart, coupons)
       remaining_items = current_item[:count] - elements[:num] #items coupon doesnt apply to 
       current_item[:count] = remaining_items #items coupon doesnt apply to
    
-   #coupon number of items
-    
-   item_with_coupon = {}
-   item_with_coupon 
-   
-   # update coupon :item to say "W/COUPON"
-   # add :price (:cost / :num)
-   # add :count
-   # delete :cost
-   # delete :num
-   
- 
- 
- 
- 
- 
- 
- 
- 
+    #create the new coupon hash
+      item_with_coupon = {}
+      item_with_coupon[:item] = elements[:item] +"W/COUPON"
+      item_with_coupon[:price] = (elements[:cost] / elements[:num])
+      item_with_coupon[:clearance] = current_item[:clearance]
+      item_with_coupon[:count] = elements[:num]
+  
+    cart << item_with_coupon
+    end
+  end
  return cart
 end
 
