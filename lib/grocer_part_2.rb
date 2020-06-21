@@ -11,10 +11,9 @@ def apply_coupons(cart, coupons)
    
    #coupon number of items
     
+   item_with_coupon = {}
+   item_with_coupon 
    
-   
-   
-   # create new empty hash
    # update coupon :item to say "W/COUPON"
    # add :price (:cost / :num)
    # add :count
@@ -29,7 +28,7 @@ def apply_coupons(cart, coupons)
  
  
  
- 
+ return cart
 end
 
 def apply_clearance(cart)
