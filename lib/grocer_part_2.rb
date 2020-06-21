@@ -32,6 +32,7 @@ end
 
 def checkout(cart, coupons)
   
+  consolidated
   
   
   
