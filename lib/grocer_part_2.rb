@@ -4,6 +4,7 @@ def apply_coupons(cart, coupons)
   
  cart.each do |items|
    # if item equals the coupon item
+   
    # then evaluate if item[:count] >= coupon item count
    # if yes, then item[:count] - coupon :num (key)
    
