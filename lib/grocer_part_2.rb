@@ -5,12 +5,12 @@ def apply_coupons(cart, coupons)
  coupons.each do |elements| #take each coupon 
    
     current_item = find_item_by_name_in_collection(elements[:item], cart)
-    if current_item
+    if current_item[:count] => elements[:num] # if we are more/equal num of items as the coupon
+      remaining_items = current_item[:count] - elements[:num] #items coupon doesnt apply to 
+      current_item[:count] = remaining_items #items coupon doesnt apply to
    
+    
    
-   
-   # then evaluate if item[:count] >= coupon item count
-   # if yes, then item[:count] - coupon :num (key)
    
    
    # create new empty hash
