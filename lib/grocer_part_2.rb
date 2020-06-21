@@ -3,9 +3,8 @@ require_relative './part_1_solution.rb'
 def apply_coupons(cart, coupons)
   
  cart.each do |items|
-   # if item equals the coupon item
    
-    current_item = find_item_by_name_in_collection(grocery_item[:item], new_cart)
+    current_item = find_item_by_name_in_collection(cart[:item], coupons)
     if current_item
    
    # then evaluate if item[:count] >= coupon item count
