@@ -9,6 +9,7 @@ def apply_coupons(cart, coupons)
       remaining_items = current_item[:count] - elements[:num] #items coupon doesnt apply to 
       current_item[:count] = remaining_items #items coupon doesnt apply to
    
+   #coupon number of items
     
    
    
