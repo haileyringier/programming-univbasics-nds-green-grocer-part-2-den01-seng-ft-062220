@@ -39,17 +39,14 @@ grand_total = 0
 
   final_cart = apply_clearance(consolidated_coupon_cart)
 
-final_cart.each do |elements|
- item_price = elements[:price] * elements[:count]
- grand_total = grand_total + item_price
-end
+    final_cart.each do |elements|
+      item_price = elements[:price] * elements[:count]
+      grand_total = grand_total + item_price
+    end
 
-if grand_total > 100
-  grand_total * 0.9
-end
-    
-
-  
+  if grand_total > 100
+    grand_total * 0.9
+  end
   
  return grand_total 
 end
