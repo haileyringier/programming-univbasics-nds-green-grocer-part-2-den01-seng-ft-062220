@@ -2,9 +2,9 @@ require_relative './part_1_solution.rb'
 
 def apply_coupons(cart, coupons)
   
- coupons.each do |items| #take each coupon 
+ coupons.each do |elements| #take each coupon 
    
-    current_item = find_item_by_name_in_collection(coupons[:item], cart)
+    current_item = find_item_by_name_in_collection(elements[:item], cart)
     if current_item
    
    
