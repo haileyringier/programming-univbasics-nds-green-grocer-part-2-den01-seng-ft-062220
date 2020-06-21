@@ -9,6 +9,8 @@ def apply_coupons(cart, coupons)
       remaining_items = current_item[:count] - elements[:num] #items coupon doesnt apply to 
       current_item[:count] = remaining_items #items coupon doesnt apply to
    
+   #delete cart items if count == num
+   
     #create the new coupon hash
       item_with_coupon = {}
       item_with_coupon[:item] = elements[:item] +"W/COUPON"
