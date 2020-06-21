@@ -10,7 +10,7 @@ def apply_coupons(cart, coupons)
       current_item[:count] = remaining_items #items coupon doesnt apply to
 
       item_with_coupon = {}
-      item_with_coupon[:item] = elements[:item] +"W/COUPON"
+      item_with_coupon[:item] = "#{item_name} W/COUPON"   #elements[:item] +"W/COUPON"
       item_with_coupon[:price] = (elements[:cost] / elements[:num])
       item_with_coupon[:clearance] = current_item[:clearance]
       item_with_coupon[:count] = elements[:num]
