@@ -45,7 +45,7 @@ grand_total = 0
     end
 
   if grand_total > 100
-    grand_total * 0.9
+   grand_total = grand_total * 0.9
   end
   
  return grand_total 
