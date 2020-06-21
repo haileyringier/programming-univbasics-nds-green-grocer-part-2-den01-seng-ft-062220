@@ -7,6 +7,8 @@ def apply_coupons(cart, coupons)
    # then evaluate if item[:count] >= coupon item count
    # if yes, then item[:count] - coupon :num (key)
    
+   
+   # create new empty hash
    # update coupon :item to say "W/COUPON"
    # add :price (:cost / :num)
    # add :count
