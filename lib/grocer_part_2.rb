@@ -2,10 +2,12 @@ require_relative './part_1_solution.rb'
 
 def apply_coupons(cart, coupons)
   
- cart.each do |items|
+ coupons.each do |items| #take each coupon 
    
-    current_item = find_item_by_name_in_collection(cart[:item], coupons)
+    current_item = find_item_by_name_in_collection(coupons[:item], cart)
     if current_item
+   
+   
    
    # then evaluate if item[:count] >= coupon item count
    # if yes, then item[:count] - coupon :num (key)
